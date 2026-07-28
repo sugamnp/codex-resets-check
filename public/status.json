@@ -1,19 +1,31 @@
 {
-  "status": "none",
-  "summary": "No qualifying Codex reset announcement was found in the available public sources.",
-  "checkedAt": "2026-07-28T03:09:27.594854+00:00",
+  "status": "confirmed",
+  "summary": "A Codex usage reset is available now.",
+  "checkedAt": "2026-07-28T03:14:16.419764+00:00",
   "sourcesAvailable": [
-    "XCancel RSS"
+    "CodexResets",
+    "Codex Resets"
   ],
-  "recentCandidates": [
-    {
-      "createdAt": "2026-07-28T03:09:28.424914+00:00",
-      "source": "XCancel RSS",
-      "text": "RSS reader not yet whitelisted! | RSS reader not yet whitelist! Plain request with just the ID will be ignored! Please send an email rss [AT] xcancel [DOT] com with the reason why you want your RSS feed reader to be whitelist and this ID: c97a170cc03738d1872d5a827d76347632c46edf5919532bda1137eed3d7a82b8b932d3bb486452ff7237827fed81aa57889a1e76df96cbda61a127cff3387f881b4c6456f379288aeb7b45171196307b055e91e2c4866540edd7ff5e8efe088",
-      "classification": "none"
-    }
-  ],
+  "bestMatch": {
+    "createdAt": "2026-07-28T03:14:17.124882+00:00",
+    "text": "The usage limits have been reset for all paid users of Codex and ChatGPT Work.",
+    "url": "https://codex-resets.com/",
+    "source": "Codex Resets",
+    "status": "confirmed",
+    "confidence": 95,
+    "score": 95,
+    "signals": [
+      "Confirmed by dedicated Codex reset tracker",
+      "Recent reset wording detected"
+    ]
+  },
+  "lastReset": {
+    "createdAt": "2026-07-28T03:14:17.124882+00:00",
+    "text": "The usage limits have been reset for all paid users of Codex and ChatGPT Work.",
+    "url": "https://codex-resets.com/",
+    "source": "Codex Resets"
+  },
   "errors": [
-    "Nitter Poast RSS: HTTPError: HTTP Error 403: Forbidden"
+    "Reset Alert: no reset events parsed"
   ]
 }
