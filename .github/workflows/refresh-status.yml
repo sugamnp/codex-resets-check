@@ -13,6 +13,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: refresh-status
@@ -21,6 +23,9 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -49,19 +54,35 @@ jobs:
 
             if git diff --cached --quiet; then
               echo "No status change to commit."
-              exit 0
+              break
             fi
 
             git commit -m "Refresh Codex reset status"
 
             if git push origin HEAD:main; then
               echo "Status published successfully."
-              exit 0
+              break
+            fi
+
+            if [ "${attempt}" -eq 5 ]; then
+              echo "Could not publish status after 5 attempts."
+              exit 1
             fi
 
             echo "Remote changed before push; retrying from latest main."
             sleep $((attempt * 2))
           done
 
-          echo "Could not publish status after 5 attempts."
-          exit 1
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload refreshed site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy refreshed site
+        id: deployment
+        uses: actions/deploy-pages@v4
