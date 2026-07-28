@@ -1,6 +1,11 @@
 name: Refresh Codex reset status
 
 on:
+  push:
+    branches: ["main"]
+    paths:
+      - "scripts/update_status.py"
+      - ".github/workflows/refresh-status.yml"
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:
