@@ -1,10 +1,14 @@
 {
   "status": "unavailable",
-  "summary": "All public RSS sources were unavailable. The app cannot verify the current status.",
-  "checkedAt": "2026-07-28T02:11:27.067676+00:00",
+  "summary": "All configured public sources were unavailable. The app cannot verify the current status.",
+  "checkedAt": "2026-07-28T02:38:04.523749+00:00",
+  "sourcesAvailable": [],
   "errors": [
-    "https://xcancel.com/thsottiaux/rss: ParseError",
-    "https://nitter.poast.org/thsottiaux/rss: HTTPError",
-    "https://nitter.privacydev.net/thsottiaux/rss: URLError"
+    "TwStalker: HTTPError: HTTP Error 403: Forbidden",
+    "TwStalker mobile: HTTPError: HTTP Error 403: Forbidden",
+    "TwStalker site: HTTPError: HTTP Error 403: Forbidden",
+    "ResetAlert: empty response",
+    "XCancel RSS: ParseError: XML or text declaration not at start of entity: line 1, column 2",
+    "Nitter Poast RSS: HTTPError: HTTP Error 403: Forbidden"
   ]
 }
