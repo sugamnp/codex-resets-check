@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Checks whether a credible Codex usage reset has been announced." />
+  <title>Codex Reset Watch</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="card">
+      <p class="eyebrow">Monitoring @thsottiaux</p>
+      <h1>Are any Codex resets available or coming soon?</h1>
+
+      <div id="status" class="status status-loading">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <strong id="status-label">Checking latest result…</strong>
+          <p id="status-summary">Loading the most recent scheduled scan.</p>
+        </div>
+      </div>
+
+      <article id="evidence" class="evidence" hidden>
+        <div class="evidence-top">
+          <span id="confidence"></span>
+          <span id="score"></span>
+        </div>
+        <blockquote id="post-text"></blockquote>
+        <div id="signals" class="signals"></div>
+        <a id="post-link" class="link" target="_blank" rel="noreferrer">View original post</a>
+      </article>
+
+      <footer id="checked-at">Last checked: unknown</footer>
+    </section>
+  </main>
+  <script src="app.js" defer></script>
+</body>
+</html>
