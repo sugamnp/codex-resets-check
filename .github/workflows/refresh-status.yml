@@ -5,6 +5,7 @@ on:
     branches: ["main"]
     paths:
       - "scripts/update_status.py"
+      - "scripts/run_status.py"
       - ".github/workflows/refresh-status.yml"
   schedule:
     - cron: "17 * * * *"
@@ -43,7 +44,7 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
 
-            python scripts/update_status.py
+            python scripts/run_status.py
             git add public/status.json
 
             if git diff --cached --quiet; then
