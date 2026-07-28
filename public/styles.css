@@ -36,4 +36,9 @@ blockquote { margin: 18px 0; font-size: 19px; line-height: 1.55; }
 .signals { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
 .signals span { background: #1a2230; border: 1px solid #2b3749; color: #c7d8f2; padding: 6px 9px; border-radius: 999px; font-size: 12px; }
 .link { color: #8ab4ff; font-weight: 700; text-decoration: none; }
+.support { margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.support p { margin: 0; color: var(--muted); font-size: 14px; }
+.coffee-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 16px; border-radius: 12px; background: #ffdd00; color: #111; font-weight: 800; text-decoration: none; box-shadow: 0 10px 24px rgba(255, 221, 0, .18); transition: transform .15s ease, box-shadow .15s ease; }
+.coffee-link:hover { transform: translateY(-1px); box-shadow: 0 14px 30px rgba(255, 221, 0, .24); }
+.coffee-link:focus-visible { outline: 3px solid #8ab4ff; outline-offset: 3px; }
 footer { color: var(--muted); font-size: 12px; margin-top: 20px; }
