@@ -1,13 +1,13 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+import re
 import xml.etree.ElementTree as ET
 
 import update_status
 
 
 def parse_rss_tolerant(payload: bytes, source_url: str) -> list[dict]:
-    # Some mirrors prepend a BOM, whitespace, or a small banner before the XML.
     cleaned = payload.lstrip(b"\xef\xbb\xbf\x00\t\r\n ")
     starts = [
         position
@@ -27,10 +27,6 @@ def parse_rss_tolerant(payload: bytes, source_url: str) -> list[dict]:
     for item in root.findall(".//item")[:30]:
         title = update_status.strip_html(item.findtext("title") or "")
         description = update_status.strip_html(item.findtext("description") or "")
-
-        # Keep both fields. XCancel often puts the main tweet in one field and
-        # quoted/contextual text in the other; choosing only the longer field
-        # can discard the actual reset announcement.
         parts = [part for part in (title, description) if part]
         text = " | ".join(dict.fromkeys(parts))
 
@@ -47,7 +43,34 @@ def parse_rss_tolerant(payload: bytes, source_url: str) -> list[dict]:
     return items
 
 
+_original_score_post = update_status.score_post
+
+
+def score_trusted_account_post(post: dict) -> dict:
+    scored = _original_score_post(post)
+    text = post["text"]
+
+    # This feed is exclusively @thsottiaux, so a direct announcement about
+    # resetting usage limits does not need to repeat the word "Codex".
+    trusted_reset = bool(
+        re.search(r"\breset(?:ting|s|ted)?\b", text, re.I)
+        and re.search(r"\busage\s+limits?\b|\blimits?\s+for\s+all\b", text, re.I)
+        and re.search(r"\b(?:we(?:'re| are| have| will)|once again|for all|everyone|another)\b", text, re.I)
+        and not re.search(r"\b(?:but no|not announcing|should we|maybe|might|thinking i am about to announce)\b", text, re.I)
+    )
+
+    if trusted_reset:
+        scored["score"] = max(scored["score"], 92)
+        scored["confidence"] = max(scored["confidence"], 92)
+        scored["status"] = "confirmed"
+        if "Trusted account reset wording" not in scored["signals"]:
+            scored["signals"].append("Trusted account reset wording")
+
+    return scored
+
+
 update_status.parse_rss = parse_rss_tolerant
+update_status.score_post = score_trusted_account_post
 
 
 if __name__ == "__main__":
