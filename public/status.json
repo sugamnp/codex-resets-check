@@ -1,14 +1,15 @@
 {
-  "status": "unavailable",
-  "summary": "All configured public sources were unavailable. The app cannot verify the current status.",
-  "checkedAt": "2026-07-28T02:40:04.291529+00:00",
-  "sourcesAvailable": [],
+  "status": "none",
+  "summary": "No qualifying Codex reset announcement was found in the available public sources.",
+  "checkedAt": "2026-07-28T02:59:25.817878+00:00",
+  "sourcesAvailable": [
+    "XCancel RSS"
+  ],
   "errors": [
     "TwStalker: HTTPError: HTTP Error 403: Forbidden",
     "TwStalker mobile: HTTPError: HTTP Error 403: Forbidden",
     "TwStalker site: HTTPError: HTTP Error 403: Forbidden",
     "ResetAlert: empty response",
-    "XCancel RSS: ParseError: XML or text declaration not at start of entity: line 1, column 2",
     "Nitter Poast RSS: HTTPError: HTTP Error 403: Forbidden"
   ]
 }
