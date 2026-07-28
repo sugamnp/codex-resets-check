@@ -26,20 +26,36 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh status
-        run: python scripts/update_status.py
-
-      - name: Commit updated status
+      - name: Refresh and publish status
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/status.json
 
-          if git diff --cached --quiet; then
-            echo "No status change to commit."
-            exit 0
-          fi
+          for attempt in 1 2 3 4 5; do
+            echo "Publish attempt ${attempt}/5"
+            git fetch origin main
+            git reset --hard origin/main
 
-          git commit -m "Refresh Codex reset status"
-          git pull --rebase origin main
-          git push origin HEAD:main
+            python scripts/update_status.py
+            git add public/status.json
+
+            if git diff --cached --quiet; then
+              echo "No status change to commit."
+              exit 0
+            fi
+
+            git commit -m "Refresh Codex reset status"
+
+            if git push origin HEAD:main; then
+              echo "Status published successfully."
+              exit 0
+            fi
+
+            echo "Remote changed before push; retrying from latest main."
+            sleep $((attempt * 2))
+          done
+
+          echo "Could not publish status after 5 attempts."
+          exit 1
