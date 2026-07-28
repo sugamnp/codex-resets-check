@@ -8,7 +8,7 @@ on:
       - "scripts/run_status.py"
       - ".github/workflows/refresh-status.yml"
   schedule:
-    - cron: "17 * * * *"
+    - cron: "7,37 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -23,6 +23,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
