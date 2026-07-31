@@ -1,13 +1,13 @@
 {
   "status": "confirmed",
   "summary": "A Codex usage reset is available now.",
-  "checkedAt": "2026-07-31T04:03:47.549398+00:00",
+  "checkedAt": "2026-07-31T06:52:01.607202+00:00",
   "sourcesAvailable": [
     "CodexResets",
     "Codex Resets"
   ],
   "bestMatch": {
-    "createdAt": "2026-07-31T04:03:48.315323+00:00",
+    "createdAt": "2026-07-31T06:52:02.525954+00:00",
     "text": "I've reset usage limits for all ChatGPT Work and Codex users.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets",
@@ -20,7 +20,7 @@
     ]
   },
   "lastReset": {
-    "createdAt": "2026-07-31T04:03:48.315323+00:00",
+    "createdAt": "2026-07-31T06:52:02.525954+00:00",
     "text": "I've reset usage limits for all ChatGPT Work and Codex users.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets"
