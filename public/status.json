@@ -1,14 +1,14 @@
 {
   "status": "confirmed",
   "summary": "A Codex usage reset is available now.",
-  "checkedAt": "2026-09-04T06:29:39.023669+00:00",
+  "checkedAt": "2026-09-04T11:40:11.039288+00:00",
   "sourcesAvailable": [
     "CodexResets",
     "Codex Resets"
   ],
   "bestMatch": {
-    "createdAt": "2026-09-04T06:29:39.385231+00:00",
-    "text": "browser \n telegram \n email \n Email address \n send link \n Latest Codex reset \n 7 hours ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
+    "createdAt": "2026-09-04T11:40:12.049539+00:00",
+    "text": "browser \n telegram \n email \n Email address \n send link \n Latest Codex reset \n 12 hours ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets",
     "status": "confirmed",
@@ -20,8 +20,8 @@
     ]
   },
   "lastReset": {
-    "createdAt": "2026-09-04T06:29:39.385231+00:00",
-    "text": "browser \n telegram \n email \n Email address \n send link \n Latest Codex reset \n 7 hours ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
+    "createdAt": "2026-09-04T11:40:12.049539+00:00",
+    "text": "browser \n telegram \n email \n Email address \n send link \n Latest Codex reset \n 12 hours ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets"
   },
