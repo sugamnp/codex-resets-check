@@ -1,14 +1,14 @@
 {
   "status": "confirmed",
   "summary": "A Codex usage reset is available now.",
-  "checkedAt": "2026-09-06T21:13:13.564298+00:00",
+  "checkedAt": "2026-09-06T23:04:10.251976+00:00",
   "sourcesAvailable": [
     "CodexResets",
     "Codex Resets"
   ],
   "bestMatch": {
-    "createdAt": "2026-09-06T21:13:14.773639+00:00",
-    "text": "Yes 724 \n No 2331 \n Vote saved · \n Put your bet on X ↗ \n Latest Codex reset \n 2 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
+    "createdAt": "2026-09-06T23:04:12.054660+00:00",
+    "text": "Yes 3600 \n No 2579 \n Vote saved · \n Put your bet on X ↗ \n Latest Codex reset \n 2 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets",
     "status": "confirmed",
@@ -20,8 +20,8 @@
     ]
   },
   "lastReset": {
-    "createdAt": "2026-09-06T21:13:14.773639+00:00",
-    "text": "Yes 724 \n No 2331 \n Vote saved · \n Put your bet on X ↗ \n Latest Codex reset \n 2 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
+    "createdAt": "2026-09-06T23:04:12.054660+00:00",
+    "text": "Yes 3600 \n No 2579 \n Vote saved · \n Put your bet on X ↗ \n Latest Codex reset \n 2 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets"
   },
