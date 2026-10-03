@@ -1,14 +1,13 @@
 {
   "status": "confirmed",
   "summary": "A Codex usage reset is available now.",
-  "checkedAt": "2026-10-02T20:38:09.565342+00:00",
+  "checkedAt": "2026-10-03T00:23:24.474706+00:00",
   "sourcesAvailable": [
-    "CodexResets",
     "Codex Resets"
   ],
   "bestMatch": {
-    "createdAt": "2026-10-02T20:38:10.849227+00:00",
-    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Reset scheduled\n Awaiting confirmation By Fri, Oct 2, 17:00 UTC \n View announcement ↗ \n Latest Codex reset \n 3 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
+    "createdAt": "2026-10-03T00:23:25.629351+00:00",
+    "text": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets",
     "status": "confirmed",
@@ -20,12 +19,13 @@
     ]
   },
   "lastReset": {
-    "createdAt": "2026-10-02T20:38:10.849227+00:00",
-    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Reset scheduled\n Awaiting confirmation By Fri, Oct 2, 17:00 UTC \n View announcement ↗ \n Latest Codex reset \n 3 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
+    "createdAt": "2026-10-03T00:23:25.629351+00:00",
+    "text": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets"
   },
   "errors": [
+    "CodexResets: no reset events parsed",
     "Reset Alert: no reset events parsed"
   ]
 }
