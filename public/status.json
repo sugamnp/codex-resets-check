@@ -1,12 +1,12 @@
 {
   "status": "confirmed",
   "summary": "A Codex usage reset is available now.",
-  "checkedAt": "2026-10-05T18:47:34.671308+00:00",
+  "checkedAt": "2026-10-06T00:44:16.398536+00:00",
   "sourcesAvailable": [
     "Codex Resets"
   ],
   "bestMatch": {
-    "createdAt": "2026-10-05T18:47:35.126272+00:00",
+    "createdAt": "2026-10-06T00:44:18.067955+00:00",
     "text": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets",
@@ -19,7 +19,7 @@
     ]
   },
   "lastReset": {
-    "createdAt": "2026-10-05T18:47:35.126272+00:00",
+    "createdAt": "2026-10-06T00:44:18.067955+00:00",
     "text": "We are loading a banked reset into all accounts of our Plus, Pro and Business users.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets"
