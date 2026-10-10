@@ -1,13 +1,13 @@
 {
   "status": "confirmed",
   "summary": "A Codex usage reset is available now.",
-  "checkedAt": "2026-10-10T09:42:21.550372+00:00",
+  "checkedAt": "2026-10-10T15:49:40.678445+00:00",
   "sourcesAvailable": [
     "Codex Resets"
   ],
   "bestMatch": {
-    "createdAt": "2026-10-10T09:42:23.511012+00:00",
-    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Latest Codex reset \n 2 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
+    "createdAt": "2026-10-10T15:49:41.549985+00:00",
+    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Latest Codex reset \n 3 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets",
     "status": "confirmed",
@@ -19,8 +19,8 @@
     ]
   },
   "lastReset": {
-    "createdAt": "2026-10-10T09:42:23.511012+00:00",
-    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Latest Codex reset \n 2 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
+    "createdAt": "2026-10-10T15:49:41.549985+00:00",
+    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Latest Codex reset \n 3 days ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets"
   },
