@@ -1,16 +1,16 @@
 {
-  "status": "upcoming",
-  "summary": "A Codex usage reset has been announced and should arrive soon.",
-  "checkedAt": "2026-11-01T00:23:03.330078+00:00",
+  "status": "confirmed",
+  "summary": "A Codex usage reset is available now.",
+  "checkedAt": "2026-11-01T06:44:21.517331+00:00",
   "sourcesAvailable": [
     "Codex Resets"
   ],
   "bestMatch": {
-    "createdAt": "2026-11-01T00:23:06.190002+00:00",
-    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Banked reset scheduled\n Upcoming reset By Mon, Nov 2, 08:00 UTC \n Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too.",
+    "createdAt": "2026-11-01T06:44:21.945915+00:00",
+    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Latest Codex reset \n 6 hours ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets",
-    "status": "upcoming",
+    "status": "confirmed",
     "confidence": 95,
     "score": 95,
     "signals": [
@@ -19,8 +19,8 @@
     ]
   },
   "lastReset": {
-    "createdAt": "2026-11-01T00:23:06.190002+00:00",
-    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Banked reset scheduled\n Upcoming reset By Mon, Nov 2, 08:00 UTC \n Day 26/ You can now easily switch between multiple accounts on mobile, and coming soon to desktop too.",
+    "createdAt": "2026-11-01T06:44:21.945915+00:00",
+    "text": "browser \n telegram \n email \n Tibo time \n Local time \n Tibo time \n Local time \n Local time \n Email address \n send link \n Latest Codex reset \n 6 hours ago \n Banked reset A saved reset credit you redeem when you want — it doesn't refill your limits immediately.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets"
   },
