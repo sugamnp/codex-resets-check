@@ -1,12 +1,12 @@
 {
   "status": "confirmed",
   "summary": "A Codex usage reset is available now.",
-  "checkedAt": "2026-11-12T02:50:07.485111+00:00",
+  "checkedAt": "2026-11-12T10:53:24.408198+00:00",
   "sourcesAvailable": [
     "Codex Resets"
   ],
   "bestMatch": {
-    "createdAt": "2026-11-12T02:50:08.994716+00:00",
+    "createdAt": "2026-11-12T10:53:24.987881+00:00",
     "text": "Perhaps also a good time for a banked reset.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets",
@@ -19,7 +19,7 @@
     ]
   },
   "lastReset": {
-    "createdAt": "2026-11-12T02:50:08.994716+00:00",
+    "createdAt": "2026-11-12T10:53:24.987881+00:00",
     "text": "Perhaps also a good time for a banked reset.",
     "url": "https://codex-resets.com/",
     "source": "Codex Resets"
