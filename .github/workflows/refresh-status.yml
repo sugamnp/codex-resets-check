@@ -1,14 +1,7 @@
 name: Refresh Codex reset status
 
+# Automatic runs disabled; start manually from GitHub Actions if needed.
 on:
-  push:
-    branches: ["main"]
-    paths:
-      - "scripts/update_status.py"
-      - "scripts/run_status.py"
-      - ".github/workflows/refresh-status.yml"
-  schedule:
-    - cron: "7,37 * * * *"
   workflow_dispatch:
 
 permissions:
